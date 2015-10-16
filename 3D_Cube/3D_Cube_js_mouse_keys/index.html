@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>3D Cube + JS (Annoying)</title>
+		<!-- font -->
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+		
+		<!-- load styles -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body onmousemove="doMouseMadness(event)" ontouchmove="doTouchMagic(event)">
+
+	<div class="world">
+		<div class="cubeContainer">
+		    <div class="face one">
+		      	1
+		    </div>
+		    <div class="face two">
+		      	2
+		    </div>
+		    <div id="winner" class="face three">
+		      	3
+		    </div>
+		    <div class="face four">
+		      	4
+		    </div>
+		    <div class="face five">
+		      	5
+		    </div>
+		    <div class="face six">
+		    	6
+		    </div>
+		</div>
+	</div>
+
+	<div class="footer"> <b>stop the music & click side 3 (blue) to WIN!</b> </div>
+
+	<script src="js/keys.js"></script>
+	<script src="js/mouse.js"></script>
+	<script src="js/winner.js"></script>
+
+	</body>
+</html>

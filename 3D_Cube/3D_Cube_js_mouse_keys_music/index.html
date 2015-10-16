@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>3D Cube + JS (Annoying)</title>
+		<!-- font -->
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+		
+		<!-- load styles -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body onmousemove="doMouseMadness(event)">
+
+	<div class="world">
+		<div class="cubeContainer">
+		    <div class="face one">
+		      	1
+		      	<audio src="http://216.227.134.162/ost/dr.-mario-gb-soundtrack/olqluluuwn/01-menu.mp3" controls autoplay loop>
+		    </div>
+		    <div class="face two">
+		      	2
+		      	<audio src="http://216.227.134.162/ost/sonic-the-hedgehog-original-soundtrack/rbarqqxpst/02-green-hill-zone.mp3" controls autoplay loop>
+		    </div>
+		    <div id="winner" class="face three">
+		      	3
+		    </div>
+		    <div class="face four">
+		      	4
+		      	<audio src="http://www.mariomayhem.com/downloads/sound_tracks/Super_Mario_Bros._1/02-underworld.mp3" controls autoplay loop>
+		    </div>
+		    <div class="face five">
+		      	5
+		      	<audio src="http://216.227.134.162/ost/star-fox-64-original-soundtrack/mgteiaousv/02-title.mp3" controls autoplay loop>
+		    </div>
+		    <div class="face six">
+		    	6
+		    	<audio src="http://216.227.134.162/ost/pokemon-gold-gb-/xkgmkvfrfo/01-pokemon-gs-intro-1.mp3" controls autoplay loop>
+		    </div>
+		</div>
+	</div>
+
+	<div class="winningBanner"><b>WINNER!</b><br>Use the arrow keys to play around (;</div>
+	<div class="footer"> <b>STOP THE MUSIC!</b><br><b>click side 3, the blue one.</b> </div>
+
+	<script src="js/keys.js"></script>
+	<script src="js/mouse.js"></script>
+	<script src="js/winner.js"></script>
+
+	</body>
+</html>

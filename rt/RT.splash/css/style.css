@@ -1,0 +1,103 @@
+p {
+	color: black;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.block {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+}
+
+.top {
+    top: 0;
+
+    background: linear-gradient(grey, white);
+    overflow: hidden;
+}
+
+.bottom {
+    bottom: 0;
+
+    background: linear-gradient(black, grey);
+    overflow: hidden;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.upper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+}
+
+.lower {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+}
+
+#RT-logo {
+    position: absolute;
+    left: 47vw;
+    top: 21vh;
+    width: 6vw;
+}
+
+.rolling {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 6em;
+    line-height: 0.69em;
+
+    transition-duration: 1s;
+}
+
+.rolling:hover { opacity: 0.5; }
+
+.thunder {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 6em;
+    line-height: 0.68em;
+
+    transition-duration: 1s;
+}
+
+.thunder:hover { opacity: 0.5; }
+
+.play {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.create {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+}

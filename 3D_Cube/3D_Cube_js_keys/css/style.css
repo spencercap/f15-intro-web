@@ -1,0 +1,77 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    background: grey;
+}
+
+.world {
+    /* perspective: 800px; */
+}
+
+.cubeContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 30vw;
+    margin: 27.5vh auto auto auto;
+
+    transform-style: preserve-3d;
+
+    transition: 500ms ease-in-out;
+}
+
+.face {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    /* padding: 2vh 2vw 2vh 2vw; */
+    
+    border: 1px solid white;
+    background: rgba(35 , 35, 35, 0);
+    line-height: 30vw;
+    text-align: center;
+    font-size: 5em;
+
+    /* opacity: 0.5; */
+    /* background: radial-gradient(grey, white); */
+}
+
+.one  {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotateX(90deg) translateZ(15vw);
+}
+
+.two {
+    background: rgba(230, 10, 0, 0.3);
+    transform: translateZ(15vw);
+}
+
+.three {
+    background: rgba(0, 15, 230, 0.3);
+    transform: rotateY(90deg) translateZ(15vw);
+}
+
+.four {
+    background: rgba(255, 110, 0, 0.3);
+    transform: rotateY(180deg) translateZ(15vw);
+}
+
+.five {
+    background: rgba(15, 160, 0, 0.3);
+    transform: rotateY(-90deg) translateZ(15vw);
+}
+
+.six {
+    background: rgba(255, 250, 0, 0.3);
+    transform: rotateX(-90deg) translateZ(15vw) rotate(180deg);
+}
+
+.two.vanish {
+    display: none; /* for testing JS */
+}
