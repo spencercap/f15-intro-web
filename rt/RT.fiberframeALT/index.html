@@ -23,16 +23,23 @@
 
     <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         
-        <span id="options-play" class="fa fa-navicon"></span> 
-        <span id="options-account" class="fa-stack">
-            <span class="fa fa-circle fa-stack-2x" style="color: #fff;"></span>
-            <span class="fa fa-user fa-stack-1x fa-inverse" style="color: #000;"></span>
-        </span>
+        <div class="container-options">
+            <span class="fa fa-navicon options-play"></span> 
+        </div>
+        <div class="fa-stack container-account">
+            <span class="fa fa-circle fa-stack-2x account-icon" style="color: #fff;"></span>
+            <span class="fa fa-user fa-stack-1x fa-inverse account-icon" style="color: #000;"></span>
+        </div>
+        <div class="container-search">
+            <label class="search" for="inpt_search">
+                <input class="search-input" id="inpt_search" type="text"/>
+            </label>
+            <!--  <div class="search-handle"></div> -->
+        </div>
+
         <div id="logo-container">
             <img id="logo" src="img/white-clouds-opt.svg ">
         </div>
-
-        <div id="search-field">SEARCH</div>
         
         <!-- <div id="navbar" class="navbar-collapse collapse">
             <form class="navbar-form navbar-right" role="form">
@@ -85,32 +92,34 @@
                 <input id="play-button" type="checkbox"/>
                 <label for="play-button" class="fa fa-play play-video"></label>
 
-                <img id="" class="video-still" src="img/movie-still-1.jpg">
-
-                <a class="box one" href="#" role="button">
-                    <p class="name project-name">One Wave</p>
-                    <p class="name author">Alfred Whipper</p>
-                </a>
-                <a class="box two" href="#" role="button">
-                    <span class="fa fa-bolt icon"></span>
-                    <p class="name icon-name">Bolt</p>
-                </a>
-                <a class="box three" href="#" role="button">
-                    <span class="fa fa-comments icon"></span>
-                    <p class="name icon-name">Comments</p>
-                </a>
-                <a class="box four" href="#" role="button">
-                    <span class="fa fa-users icon"></span>
-                    <p class="name icon-name">Collaborate</p>
-                </a>
-                <a class="box five" href="#" role="button">
-                    <span class="fa fa-share-alt icon"></span>
-                    <p class="name icon-name">Share</p>
-                </a>
-                <a class="box six" href="#" role="button">
-                    <span class="fa fa-share icon"></span>
-                    <p class="name icon-name">See More</p>
-                </a>
+                <img id="still-1" class="video-still" src="img/movie-still-1.jpg">
+                
+                <div id="video01-button-container" class="container-buttons">
+                    <a class="box one" href="#" role="button">
+                        <p class="name project-name video01-primary">One Wave</p>
+                        <p class="name author video01-secondary">Alfred Whipper</p>
+                    </a>
+                    <a class="box two" href="#" role="button">
+                        <span class="fa fa-bolt icon video01-primary"></span>
+                        <p class="name icon-name video01-secondary">Bolt</p>
+                    </a>
+                    <a class="box three" href="#" role="button">
+                        <span class="fa fa-comments icon video01-primary"></span>
+                        <p class="name icon-name video01-secondary">Comments</p>
+                    </a>
+                    <a class="box four" href="#" role="button">
+                        <span class="fa fa-users icon video01-primary"></span>
+                        <p class="name icon-name video01-secondary">Collaborate</p>
+                    </a>
+                    <a class="box five" href="#" role="button">
+                        <span class="fa fa-share-alt icon video01-primary"></span>
+                        <p class="name icon-name video01-secondary">Share</p>
+                    </a>
+                    <a class="box six" href="#" role="button">
+                        <span class="fa fa-share icon video01-primary"></span>
+                        <p class="name icon-name video01-secondary">See More</p>
+                    </a>
+                </div>
             </div>
 
             <div class="project col-md-12">
@@ -213,6 +222,7 @@
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/color-thief.js"></script>
     <script src="js/main.js"></script>
 
     </body>
