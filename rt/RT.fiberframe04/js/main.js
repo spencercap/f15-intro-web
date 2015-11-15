@@ -14,28 +14,53 @@ $( document ).ready(function() {
 
 
 
+	/* --=-- options menu --=-- */
+	$(".container-options").on('click', function () {
+		$(this).toggleClass("options-opened");
+		var $icon = $(this).children();
+		var $containerLogin = $(".container-login");
 
+		if ( $(this).hasClass("options-opened") ) {
+			$icon.removeClass("fa-navicon");
+			$icon.addClass("fa-close");
 
-	/* --=-- FaceBook --=-- */
-	$("#login").on('click', function() {
-		FB.login(function(response) {
-		// handle the response
-		console.log("my button is happening!");
-		console.log(response);
-		console.log(response.status);
-		}, {scope: 'public_profile,email,user_friends'});
+			$containerLogin[0].style.display = "block" ;
+		}
+		else {
+			$icon.removeClass("fa-close");
+			$icon.addClass("fa-navicon");
 
+			$containerLogin[0].style.display = "none" ;
+		}
 
 	});
 
-	$("#logout").on('click', function() {
+
+
+	/* --=-- Facebook Login --=-- */
+	/* developers.facebook.com/apps */
+	$(".login.facebook").on('click', function() {
+		console.log("facebook login pressed");
+		FB.login(function(response) {
+			// handle the response
+			console.log(response);
+			testAPI("connected");
+		}, {scope: 'public_profile,email,user_friends'});
+		
+	});
+
+	/* --=-- Logout --=-- */
+	$(".logout").on('click', function() {
+		console.log("logout pressed");
+		
+		// Facebook logout
 		FB.logout(function(response) {
 			testAPI("logout");
         	// Person is now logged out
-        	for ( var k in response ) {
-                console.log(k + ": " + response[k]);
-            }
    		});
+
+   		// Google logout 
+   		signOutGoogle();
 
 	});
 

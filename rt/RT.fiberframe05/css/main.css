@@ -92,7 +92,7 @@ a:visited {
 
 /* Spencer's Stuff */ 
 #nav {
-	height: 50px;
+	height: 3.125em;
 	
 	background: #000;
 	box-shadow: 0px 0px 10px 0px #000;
@@ -119,6 +119,8 @@ footer {
 	float: left;
 	height: 100%;
 	width: 4em;
+
+	cursor: pointer;  
 }
 
 .options-play {
@@ -131,12 +133,15 @@ footer {
 	color: #fff;
 	font-size: 1.5em;
 	text-align: center;
+	user-select: none;
 }
 
 .container-account {
 	float: right;
 	height: 100%;
 	width: 4em;
+
+	cursor: pointer;
 }
 
 .account-icon {
@@ -150,6 +155,8 @@ footer {
     height: 40px;
     width: 56.25px;
     margin: auto;
+
+    cursor: pointer;
 }
 
 #logo {
@@ -347,6 +354,60 @@ input:checked ~ .video-still {
     transition-duration: 3000ms;
 }
 
+.container-login {
+	position: fixed;
+	display: none;
+	top: 50px;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	background: #fff;
+
+	z-index: 5;
+}
+
+.login {
+	/*position: relative;*/
+	height: 2em;
+	margin: 25px auto;
+	
+	cursor: pointer;
+	font-size: 1.5em;
+	line-height: 2em;
+	text-align: center;
+
+
+	color: #fff;
+}
+
+.facebook {
+	background: #3b5998;
+}
+
+.google {
+	background: #D50F25;
+}
+
+.logout {
+	position: inherit;
+    bottom: 25px;
+    height: 2em;
+    width: 100%;
+    margin: 25px auto;
+
+    cursor: pointer;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+    background: #808080;
+    color: #fff
+}
+
+
+
+
+/* --=-- Color Thief --=-- */
 .container-buttons {
 	/*position: relative;*/
 	width: 100%;
@@ -355,6 +416,8 @@ input:checked ~ .video-still {
 	background: #fff;
 
 }
+
+
 
 
 /* try this: http://stackoverflow.com/questions/1431726/css-selector-for-a-checked-radio-buttons-label

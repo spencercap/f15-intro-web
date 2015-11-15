@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- Google Login -->
+    <script src="https://apis.google.com/js/api:client.js"></script>
 </head>
 <body>
 
@@ -29,7 +31,6 @@
             </label>
             <!--  <div class="search-handle"></div> -->
         </div>
-
         <div id="logo-container">
             <img id="logo" src="img/white-clouds-opt.svg ">
         </div>
@@ -57,9 +58,13 @@
     </nav>
 
     <div class="container-login">
-        <button id="login" type="button">MY LOGIN BUTTON</button>
-        <button id="logout" type="button">MY LOGOUT BUTTON</button>
-                
+        
+        <div class="login facebook">Login with Facebook</div>
+        <div id="customBtn" class="login google customGPlusSignIn">Login with Google</div>
+
+        <div id="status">This is your login status</div>
+    
+        <div class="logout">Log out</div>
 
     </div>
 
@@ -78,10 +83,10 @@
     </div> -->
     
     <div class="container cats">
-       
+    
     </div>
 
-    <div class="container">
+    <div class="container projects">
         <div class="row">
             <div class="project col-md-12">
                 
@@ -90,7 +95,7 @@
 
                 <img id="still-1" class="video-still" src="img/movie-still-1.jpg">
                 
-                <div id="video01-button-container" class="container-buttons">
+                <div id="video01-button-container" class="container-buttons" onClick="genCTcolors(this)">
                     <a class="box one" href="#" role="button">
                         <p class="name project-name video01-primary">One Wave</p>
                         <p class="name author video01-secondary">Alfred Whipper</p>
@@ -107,26 +112,6 @@
                         <span class="fa fa-info-circle icon video01-primary"></span>
                         <p class="name icon-name video01-secondary">Info</p>
                     </a>
-
-                    <div
-                      class="fb-like"
-                      data-share="true"
-                      data-width="450"
-                      data-show-faces="true">
-                    </div>
-
-                    <!--
-                      Below we include the Login Button social plugin. This button uses
-                      the JavaScript SDK to present a graphical Login button that triggers
-                      the FB.login() function when clicked.
-                    -->
-
-                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-                    </fb:login-button>
-
-                    <div id="status">
-                    </div>
-
                 </div>
             </div>
             <div class="project col-md-12">
@@ -144,17 +129,9 @@
                     <span class="fa fa-comments icon"></span>
                     <p class="name icon-name">Comments</p>
                 </a>
-                <a class="box four" href="#" role="button">
-                    <span class="fa fa-users icon"></span>
-                    <p class="name icon-name">Collaborate</p>
-                </a>
-                <a class="box five" href="#" role="button">
-                    <span class="fa fa-share-alt icon"></span>
-                    <p class="name icon-name">Share</p>
-                </a>
                 <a class="box six" href="#" role="button">
-                    <span class="fa fa-share icon"></span>
-                    <p class="name icon-name">See More</p>
+                    <span class="fa fa-info-circle icon video01-primary"></span>
+                    <p class="name icon-name video01-secondary">Info</p>
                 </a>
             </div>
             <div class="project col-md-12">
@@ -172,17 +149,9 @@
                     <span class="fa fa-comments icon"></span>
                     <p class="name icon-name">Comments</p>
                 </a>
-                <a class="box four" href="#" role="button">
-                    <span class="fa fa-users icon"></span>
-                    <p class="name icon-name">Collaborate</p>
-                </a>
-                <a class="box five" href="#" role="button">
-                    <span class="fa fa-share-alt icon"></span>
-                    <p class="name icon-name">Share</p>
-                </a>
                 <a class="box six" href="#" role="button">
-                    <span class="fa fa-share icon"></span>
-                    <p class="name icon-name">See More</p>
+                    <span class="fa fa-info-circle icon video01-primary"></span>
+                    <p class="name icon-name video01-secondary">Info</p>
                 </a>
             </div>
             <div class="project col-md-12">
@@ -200,17 +169,9 @@
                     <span class="fa fa-comments icon"></span>
                     <p class="name icon-name">Comments</p>
                 </a>
-                <a class="box four" href="#" role="button">
-                    <span class="fa fa-users icon"></span>
-                    <p class="name icon-name">Collaborate</p>
-                </a>
-                <a class="box five" href="#" role="button">
-                    <span class="fa fa-share-alt icon"></span>
-                    <p class="name icon-name">Share</p>
-                </a>
                 <a class="box six" href="#" role="button">
-                    <span class="fa fa-share icon"></span>
-                    <p class="name icon-name">See More</p>
+                    <span class="fa fa-info-circle icon video01-primary"></span>
+                    <p class="name icon-name video01-secondary">Info</p>
                 </a>
             </div>
 
@@ -223,13 +184,15 @@
         <p id="company-info">&copy; Rolling Thunder 2015</p>
     </footer>
     
-    
-    <script src="js/facebook-login.js"></script>
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/facebook-login.js"></script>
+    <script src="js/google-login.js"></script>
+    <!-- necessary for custom google login button -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/color-thief.js"></script>
+    <script src="js/genCTcolors.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 </html>
