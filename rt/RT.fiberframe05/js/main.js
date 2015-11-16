@@ -100,6 +100,25 @@ $( document ).ready(function() {
 
 	
 
+	// var qwe = document.querySelector(".row");
+	// console.log(qwe);
+
+	var $projects = $( ".container.projects .row" ).find( ".project" ).css( "background-color", "red" ); // space in $selector means, CHILD
+	console.log($projects);
+	console.log($projects.length);
+
+	for (i = 0; i < $projects.length; i++) {
+		console.log( $projects[i] );
+
+	}
+	// console.log($projects[0]);
+	// console.log($projects[1]);
+	// console.log($projects[2]);
+	// console.log($projects[3]);
+
+
+
+
 
 
 });

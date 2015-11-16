@@ -1,0 +1,515 @@
+
+/* ==========================================================================
+   Author's  ANIMATIONs
+   ========================================================================== */
+@keyframes spin {
+    from { transform: translateY(-50%) rotateZ(0deg)   ; }
+    to   { transform: translateY(-50%) rotateZ(360deg) ; }
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+	font-family: 'Work Sans', sans-serif;
+	/* 
+	Thin 100
+	Extra-Light 200
+	Light 300
+	Normal 400
+	Medium 500
+	Semi-Bold 600
+	Bold 700
+	*/
+	font-size: 16px;
+	background: #e6e6e6
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.75em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.25em;
+}
+p {
+	font-size: 1em;
+	margin: 0;
+}
+a {
+	color: #000;
+	text-align: center;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+}
+a:visited {
+	color: #000;
+}
+
+#screen_1200 {
+	display: none;
+}
+
+#screen_992 {
+	display: none;
+}
+
+#screen_768 {
+	display: none;
+}
+
+#screen_small {
+	display: none;
+}
+
+#screen_iPhone6Plus {
+	display: none;
+}
+
+#screen_iPhone6 {
+	display: none;
+}
+
+#screen_GalaxyS5{
+	display: none;
+}
+
+#screen_iPhone5 {
+	display: none;
+}
+
+#screen_iPhone4 {
+	display: none;
+}
+
+/* Spencer's Stuff */ 
+#nav {
+	height: 3.125em;
+	
+	background: #000;
+	box-shadow: 0px 0px 10px 0px #000;
+}
+
+footer {
+	/*position: ;*/
+	width: 100%;
+	height: 100px;
+	background: #000;
+
+	font-weight: 200;
+	color: #fff;
+	text-align: center;
+}
+
+#company-info {
+	position: relative;
+    top: 25px;
+}
+
+.container-options {
+	position: absolute;
+	float: left;
+	height: 100%;
+	width: 4em;
+
+	cursor: pointer;  
+}
+
+.options-play {
+	position: relative;
+	left: 0;
+	top: 50%;
+	margin-left: 1em;
+
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+	user-select: none;
+}
+
+.container-account {
+	float: right;
+	height: 100%;
+	width: 4em;
+
+	cursor: pointer;
+}
+
+.account-icon {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#logo-container {
+	position: relative;
+    top: 5px;
+    height: 40px;
+    width: 56.25px;
+    margin: auto;
+
+    cursor: pointer;
+}
+
+#logo {
+	height: 100%;
+}
+
+.project {
+	background: #000;
+	padding: 0;
+	margin-top: 100px;
+}
+
+.video-still {
+	width: 100%;
+	transition-duration: 700ms;
+}
+
+.box {
+    position: relative;
+    float: left;
+    width: 23.3%;
+    height: 3.75em;
+
+    background: transparent;
+
+    transition-duration: 300ms;
+}
+.box:hover {
+	background: #c4151c;
+}
+
+.one {
+	width: 30%;
+}
+
+.two {
+	border-left: solid #000 1px;
+}
+
+.three {
+	border-left: solid #000 1px;
+}
+
+.four {
+	border-left: solid #000 1px;
+}
+
+.five {
+	border-left: solid #000 1px;
+}
+
+.six {
+	/*width: 10%;*/
+	border-left: solid #000 1px;
+}
+
+.name {
+	text-align: center;
+	color: #000;
+}
+
+.project-name {
+	font-size: 1.25em;
+	font-weight: 600;
+
+	margin-top: 0.25em;
+}
+
+.author {
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+.icon {
+	font-size: 1.35em;
+
+	margin-top: 0.5em;
+	margin-bottom: 0.25em;
+}
+
+.icon-name {
+	position: relative;
+	bottom: 0;
+
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+#spacer01 {
+	height: 100px;
+}
+
+.play-video {
+	position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: auto;
+
+	color: #000;
+	opacity: 0.8;
+    transform: translateY(-50%) rotateZ(0deg) ;
+    text-align: center;
+    font-size: 7em;
+    text-shadow: 5px 4px 20px #808080;
+
+    transition-duration: 100ms;
+    transform-origin: 49% 50% ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.play-video:hover {
+	color: #fff;
+    font-size: 7em;
+    text-shadow: 5px 4px 20px #808080;
+}
+
+/*input {
+    display: none;
+}*/
+
+#play-button {
+	display: none;
+}
+input:checked + label {
+	color: #fff;
+  	animation-name: spin;
+}
+
+input:checked ~ .video-still {
+	opacity: 0.5;
+}
+
+/* ------ Search Field ------ */
+.container-search {
+	position: absolute;
+    right: 0;
+	height: 100%;
+	width: 12em;
+}
+.search {
+    position: relative;
+    top: 50%;
+    height: 1.75em;
+    width: 1.75em;
+    margin-right: 1em;
+    transform: translateY(-50%);
+    float: right;
+
+    border: 0.2em solid #fff;
+    border-radius: 0.875em;
+    transition: all 300ms ease;
+    cursor: text;
+}
+
+/*.search.active,
+.search:hover {
+  	width: 12em;
+    background: #ffffff;
+}*/
+
+.search:hover > .search-handle {
+  	/*height: 0;*/
+  	background: red;
+  	top: -10%;
+  	width: 0.1em;
+  	height: 0.1em;
+  	right: -10em;
+  	transform: rotateZ(90deg);
+}
+
+.search input {
+	position: relative;
+    left: 5%;
+    width: 95%;
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    background: transparent;
+   	outline-width: 0px;
+}
+
+.search-handle {
+	position: relative;
+    top: -30%;
+    left: 1.3em;
+    /*right: -1.3em;*/
+    width: 0.2em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    background: #fff;
+    transform: rotateZ(-45deg);
+    transition-duration: 3000ms;
+}
+
+.container-login {
+	position: fixed;
+	display: none;
+	top: 50px;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	background: #fff;
+
+	z-index: 5;
+}
+
+.login {
+	/*position: relative;*/
+	height: 2em;
+	margin: 25px auto;
+	
+	cursor: pointer;
+	font-size: 1.5em;
+	line-height: 2em;
+	text-align: center;
+
+
+	color: #fff;
+}
+
+.facebook {
+	background: #3b5998;
+}
+
+.google {
+	background: #D50F25;
+}
+
+.logout {
+	position: inherit;
+    bottom: 25px;
+    height: 2em;
+    width: 100%;
+    margin: 25px auto;
+
+    cursor: pointer;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+    background: #808080;
+    color: #fff
+}
+
+
+
+
+/* --=-- Color Thief --=-- */
+.container-buttons {
+	/*position: relative;*/
+	width: 100%;
+	height: 3.75em;
+
+	background: #fff;
+
+	transition-duration: 750ms;
+}
+
+.primary, 
+.secondary, 
+.tertiary {
+	transition-duration: 750ms;
+}
+
+
+
+
+/* try this: http://stackoverflow.com/questions/1431726/css-selector-for-a-checked-radio-buttons-label
+:checked + span {
+    color: red;
+}
+*/
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+	#screen_1200 {
+		display: block;
+	}
+
+}
+/* Tablet */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#screen_992 {
+		display: block;
+	}
+
+}
+/* Mobile */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#screen_768 {
+		display: block;
+	}
+
+}
+/* Smaller Mobile */
+@media only screen and (max-width: 767px) {
+	#screen_small {
+		display: block;
+	}
+
+}
+
+/* Specific Mobile Device Media Queries */
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) { 
+	#screen_iPhone6Plus {
+		display: block;
+	}
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (device-aspect-ratio: 375/667) { 
+	#screen_iPhone6 {
+		display: block;
+	}
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) {
+	#screen_GalaxyS5{
+		display: block;
+	}
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (device-aspect-ratio: 40/71) {
+	#screen_iPhone5 {
+		display: block;
+	}
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (device-aspect-ratio: 2/3) {
+	#screen_iPhone4 {
+		display: block;
+	}
+}
