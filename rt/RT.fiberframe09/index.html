@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RT Stream</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- Google Login -->
+    <script src="https://apis.google.com/js/api:client.js"></script>
+</head>
+<body>
+
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        
+        <div class="container-options">
+            <span class="fa fa-navicon options-play"></span> 
+        </div>
+        <div class="container-search">
+            <label class="search" for="inpt_search">
+                <input class="search-input" id="inpt_search" type="text"/>
+            </label>
+            <!--  <div class="search-handle"></div> -->
+        </div>
+        <div id="logo-container">
+            <img id="logo" src="img/white-clouds-opt.svg ">
+        </div>
+        
+        <!-- <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form">
+                <div class="form-group">
+                  <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div> -->
+    </nav>
+
+    <div class="container-login">
+        
+        <div class="login facebook">Login with Facebook</div>
+        <div id="customBtn" class="login google customGPlusSignIn">Login with Google</div>
+
+        <div id="status">This is your login status</div>
+    
+        <div class="logout">Log out</div>
+
+    </div>
+
+    <!-- <div class="jumbotron">
+      <div class="container">
+        <div id="screen_1200"><h3>Will show on screens >= 1200px</h3></div>
+        <div id="screen_992"><h3>Will show on screens >= 992px</h3></div>
+        <div id="screen_768"><h3>Will show on screens >= 768px</h3></div>
+        <div id="screen_small"><h3>Will show on screens smaller than 768px</h3></div>
+        <div id="screen_iPhone6Plus"><h3>Will show on iPhone 6+</h3></div>
+        <div id="screen_iPhone6"><h3>Will show on iPhone 6</h3></div>
+        <div id="screen_GalaxyS5"><h3>Will show on Galaxy S5 (and devices with similar dimensions)</h3></div>
+        <div id="screen_iPhone5"><h3>Will show on iPhone 5</h3></div>
+        <div id="screen_iPhone4"><h3>Will show on iPhone 4</h3></div>
+      </div>
+    </div> -->
+    
+    <div class="container cats">
+    
+    </div>
+
+    <div class="container projects">
+        <div class="row">
+            <div class="project col-md-12">
+                
+                <!-- <input id="play-button" type="checkbox"/>
+                <label for="play-button" class="fa fa-play play-video"></label> -->
+
+                <img class="video-still" src="img/movie-still-1.jpg">
+                <div class="container-buttons">
+                    <a class="box one" href="#" role="button">
+                        <p class="name project-name primary">One Wave</p>
+                        <p class="name author secondary">Alfred Whipper</p>
+                    </a>
+                    <a class="box two" href="#" role="button">
+                        <span class="fa fa-bolt icon primary"></span>
+                        <p class="name icon-name secondary">Bolt</p>
+                    </a>
+                    <a class="box three" href="#" role="button">
+                        <span class="fa fa-comments icon primary"></span>
+                        <p class="name icon-name secondary">Comments</p>
+                    </a>
+                    <a class="box six" href="#" role="button">
+                        <span class="fa fa-info-circle icon primary"></span>
+                        <p class="name icon-name secondary">Info</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project col-md-12">
+                <img class="video-still" src="img/movie-still-2.jpg">
+                <!-- <span class="fa fa-play play-video"></span> -->
+
+                <div class="container-buttons">
+                    <a class="box one" href="#" role="button">
+                        <p class="name project-name primary">The Kiss</p>
+                        <p class="name author secondary">Veronica Fischer</p>
+                    </a>
+                    <a class="box two" href="#" role="button">
+                        <span class="fa fa-bolt primary icon"></span>
+                        <p class="name icon-name secondary">Bolt</p>
+                    </a>
+                    <a class="box three" href="#" role="button">
+                        <span class="fa fa-comments primary icon"></span>
+                        <p class="name icon-name secondary">Comments</p>
+                    </a>
+                    <a class="box six" href="#" role="button">
+                        <span class="fa fa-info-circle primary icon"></span>
+                        <p class="name icon-name secondary">Info</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project col-md-12">
+                <img class="video-still" src="img/movie-still-3.jpg">
+               <!--  <span class="fa fa-play play-video"></span> -->
+                <div class="container-buttons">
+                    <a class="box one" href="#" role="button">
+                        <p class="name project-name primary">Another Way</p>
+                        <p class="name author secondary">Madeline Garringer</p>
+                    </a>
+                    <a class="box two" href="#" role="button">
+                        <span class="fa fa-bolt primary icon"></span>
+                        <p class="name icon-name secondary">Bolt</p>
+                    </a>
+                    <a class="box three" href="#" role="button">
+                        <span class="fa fa-comments primary icon"></span>
+                        <p class="name icon-name secondary">Comments</p>
+                    </a>
+                    <a class="box six" href="#" role="button">
+                        <span class="fa fa-info-circle primary icon"></span>
+                        <p class="name icon-name secondary">Info</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project col-md-12">
+                <img class="video-still" src="img/movie-still-4.jpg">
+                <!-- <span class="fa fa-play play-video"></span> -->
+                <div class="container-buttons">
+                    <a class="box one" href="#" role="button">
+                        <p class="name project-name primary">A Long Ride</p>
+                        <p class="name author secondary">Bob Richo</p>
+                    </a>
+                    <a class="box two" href="#" role="button">
+                        <span class="fa fa-bolt primary icon"></span>
+                        <p class="name icon-name secondary">Bolt</p>
+                    </a>
+                    <a class="box three" href="#" role="button">
+                        <span class="fa fa-comments primary icon"></span>
+                        <p class="name icon-name secondary">Comments</p>
+                    </a>
+                    <a class="box six" href="#" role="button">
+                        <span class="fa fa-info-circle primary icon"></span>
+                        <p class="name icon-name secondary">Info</p>
+                    </a>
+                </div>
+            </div>
+            <div class="project col-md-12">
+                <img class="video-still" src="img/movie-still-5.jpg">
+                <!-- <span class="fa fa-play play-video"></span> -->
+                <div class="container-buttons">
+                    <a class="box one" href="#" role="button">
+                        <p class="name project-name primary">Blessed</p>
+                        <p class="name author secondary">Sophie Normy</p>
+                    </a>
+                    <a class="box two" href="#" role="button">
+                        <span class="fa fa-bolt primary icon"></span>
+                        <p class="name icon-name secondary">Bolt</p>
+                    </a>
+                    <a class="box three" href="#" role="button">
+                        <span class="fa fa-comments primary icon"></span>
+                        <p class="name icon-name secondary">Comments</p>
+                    </a>
+                    <a class="box six" href="#" role="button">
+                        <span class="fa fa-info-circle primary icon"></span>
+                        <p class="name icon-name secondary">Info</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="spacer01"></div>
+
+    <footer>
+        <p id="company-info">&copy; Rolling Thunder 2015</p>
+    </footer>
+    
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/facebook-login.js"></script>
+    <script src="js/google-login.js"></script>
+    <!-- necessary for custom google login button -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/color-thief.js"></script>
+    <script src="js/genCTcolors.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
