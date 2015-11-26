@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>RT Stream</title>
+    <meta name="description" content="this is the homepage">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+   
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google Login -->
+    <script src="https://apis.google.com/js/api:client.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="container-navicon">
+            <span class="fa fa-navicon navicon"></span> 
+        </div>
+        <div class="container-navicon">
+            <img class="icon-clouds" src="img/white-clouds-opt.svg ">
+        </div>
+        <div class="container-navicon">
+            <span class="fa fa-search navicon"></span> 
+        </div>
+    </nav>
+    
+
+    <div class="container-projects">
+        
+        <div class="project">
+            <img class="video-still" src="img/movie-still-1.jpg">
+            <div class="container-project-buttons">
+                <a class="button title" href="#" role="button">
+                    <p class="primary">One Wave</p>
+                    <p class="secondary">Alfred Whipper</p>
+                </a>
+                <a class="button" href="#" role="button">
+                    <span class="fa fa-bolt primary"></span>
+                    <p class="secondary">Bolt</p>
+                </a>
+                <a class="button" href="#" role="button">
+                    <span class="fa fa-comment primary"></span>
+                    <p class="secondary">Comment</p>
+                </a>
+                <a class="button" href="#" role="button">
+                    <span class="fa fa-info-circle primary"></span>
+                    <p class="secondary">Info</p>
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+
+    <div class="container-login">
+        <div class="login facebook">Login with Facebook</div>
+        <div id="customBtn" class="login google customGPlusSignIn">Login with Google</div>
+
+        <div id="status">This is your login status</div>
+    
+        <div class="logout">Log out</div>
+    </div>
+
+    
+    <div class="container cats"></div>
+
+
+    <div id="spacer01"></div>
+
+    <footer>
+        <p id="company-info">&copy; Rolling Thunder 2015</p>
+    </footer>
+
+    
+    <!-- SCRIPTS -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/facebook-login.js"></script>
+    
+    <!-- necessary for custom google login button -->
+    <script src="js/google-login.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/color-thief.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
