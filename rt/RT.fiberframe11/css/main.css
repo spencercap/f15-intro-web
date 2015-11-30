@@ -148,7 +148,8 @@ a:visited {
 /* header */
 nav {
 	position: fixed;
-    top: 0;
+    /*top: 0;*/
+    bottom: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -159,6 +160,11 @@ nav {
 	background: linear-gradient( to right, #46C1D0, #FFAE00);
 	box-shadow: 0px 0px 10px 0px #000;
 	z-index: 10;
+}
+
+.little {
+	top: 0;
+	height: 0.5em;
 }
 
 .container-navicon {
@@ -234,7 +240,8 @@ nav {
 .container-login {
 	position: fixed;
 	display: none;
-	top: 50px;
+	/*top: 50px;*/
+	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
